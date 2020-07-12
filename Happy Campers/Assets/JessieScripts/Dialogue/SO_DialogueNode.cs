@@ -9,6 +9,7 @@ public class SO_DialogueNode : ScriptableObject
     [SerializeField] private SO_DialogueNode Choice2;
 
     [SerializeField] private string dialogueText;
+    [SerializeField] private int imageToLoad;
 
     public string GetText()
     {
@@ -24,5 +25,10 @@ public class SO_DialogueNode : ScriptableObject
         {
             return Choice2;
         }
+    }
+
+    public int GetImage()
+    {
+        return imageToLoad;
     }
 }
