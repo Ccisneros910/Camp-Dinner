@@ -30571,6 +30571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   p: {fileID: 1452656018}
+  inv: {fileID: 0}
 --- !u!1 &1988808301
 GameObject:
   m_ObjectHideFlags: 0
@@ -30719,7 +30720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27555bcbb8028ab458ddcd769c245994, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game: {fileID: 575301725}
+  points: {fileID: 0}
 --- !u!114 &1988808308
 MonoBehaviour:
   m_ObjectHideFlags: 0
