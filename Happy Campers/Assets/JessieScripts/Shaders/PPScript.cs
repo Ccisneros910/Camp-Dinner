@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PPScript : MonoBehaviour
 {
     [SerializeField] private Material material;
@@ -9,6 +9,8 @@ public class PPScript : MonoBehaviour
     [SerializeField] private float[] EveningColors;
     [SerializeField] private float TimeBeforeSunset;
     [SerializeField] private float TimeBeforeEvening;
+    [SerializeField] private float TimeBeforeEnd;
+
     [SerializeField] private float Timer;
     [SerializeField] private float InitialTime;
 
@@ -42,16 +44,19 @@ public class PPScript : MonoBehaviour
 
     private void Update()
     {
-        if (timerRunning == false) return;
         Timer += Time.deltaTime;
 
         if(Timer > TimeBeforeEvening)
         {
             BeginEvening();
-            timerRunning = false;
         }else if(Timer > TimeBeforeSunset)
         {
             BeginSunset();
+        }
+
+        if(Timer > TimeBeforeEnd)
+        {
+            SceneManager.LoadScene(4);
         }
     }
 

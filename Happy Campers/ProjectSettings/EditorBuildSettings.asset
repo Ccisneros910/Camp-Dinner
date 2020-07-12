@@ -9,12 +9,15 @@ EditorBuildSettings:
     path: Assets/JessieScenes/MainMenu.unity
     guid: afc6082736451dd4cb12eeb5f1b70adb
   - enabled: 1
-    path: Assets/Scenes/Main Level.unity
+    path: Assets/C-Scenes/Main Level.unity
     guid: c94271ce83b29004392c6e5f034e062e
   - enabled: 1
-    path: Assets/JessieScenes/InventoryScene.unity
-    guid: 90b9457240934f142a620c662bacd93b
+    path: Assets/JessieScenes/Credits.unity
+    guid: 1c4c7b7b403d7cf4baeb1e49085a6e24
   - enabled: 1
-    path: Assets/JessieScenes/EndMenu.unity
-    guid: 888155d02e81b7347bca09cf9a52156e
+    path: Assets/JessieScenes/IntroScene.unity
+    guid: 46a49a4136344144f8e32202b891eabe
+  - enabled: 1
+    path: Assets/JessieScenes/EndingScene.unity
+    guid: 1ddd676bdfba0094d9b4f69624ffe8c7
   m_configObjects: {}

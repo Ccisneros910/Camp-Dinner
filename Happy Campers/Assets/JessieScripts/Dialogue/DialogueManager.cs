@@ -42,14 +42,23 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(SO_DialogueNode node)
     {
+
+
         currentDialogueNode = node;
         dialogueStarted = true;
         ActivatePanel(true);
         textContainer.text = currentDialogueNode.GetText();
+
+        if (currentDialogueNode.GetImage() > 0)
+        {
+            print("switch image");
+            FindObjectOfType<IntroImageSwitcher>().SwitchScene(currentDialogueNode.GetImage());
+        }
     }
 
     public void EndDialogue()
     {
+
         dialogueStarted = false;
         ActivatePanel(false);
     }
