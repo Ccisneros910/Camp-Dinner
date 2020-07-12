@@ -10,7 +10,11 @@ public class PlayerCollision : MonoBehaviour
         {
             col.gameObject.GetComponent<BushManager>().take_berries();
             Debug.Log("Bush");
-
+        }
+        else if (col.gameObject.tag == "Goal" && Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Items dropped off");
+            col.gameObject.GetComponent<GoalManager>().congrats();
         }
     }
 }
