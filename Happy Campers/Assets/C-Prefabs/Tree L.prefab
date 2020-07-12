@@ -202,6 +202,7 @@ GameObject:
   - component: {fileID: 2436149593093884230}
   - component: {fileID: 5543953900577218872}
   - component: {fileID: 6060141720602115555}
+  - component: {fileID: 4955064765639000470}
   m_Layer: 0
   m_Name: Tree L
   m_TagString: Bush
@@ -257,6 +258,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0.33050346, y: -0.5473485}
   m_Size: {x: 2.7412262, y: 7.618756}
   m_Direction: 0
+--- !u!114 &4955064765639000470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2436149593093884231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ad38d7a870172c4fa216473f669d976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruit:
+  - {fileID: 2436149593141249055}
+  - {fileID: 2436149593178623094}
+  - {fileID: 2436149593076436070}
 --- !u!1 &2436149593141249055
 GameObject:
   m_ObjectHideFlags: 0

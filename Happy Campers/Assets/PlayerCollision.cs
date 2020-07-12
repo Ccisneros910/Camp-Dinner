@@ -4,21 +4,38 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    [SerializeField]
-    GoalManager points;
+    [SerializeField] GoalManager points;
+    [SerializeField] GameManager pointTracker;
 
-    private void OnCollisionStay2D(Collision2D col)
+    [SerializeField] Inventory inv;
+
+    private void OnTriggerStay2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Bush" && Input.GetKeyDown(KeyCode.Space))
+        // col.gameObject.GetComponent<BushManager>().check_if_ready() == true
+        if (col.gameObject.tag == "S'Morange" && Input.GetKeyDown(KeyCode.Space))
         {
+            inv.AddToInventory(col.gameObject);
             col.gameObject.GetComponent<BushManager>().take_fruit();
-            Debug.Log("Bush");
+            Debug.Log("S'Morange");
+        }
+        else if (col.gameObject.tag == "Bananadog" && Input.GetKeyDown(KeyCode.Space))
+        {
+            inv.AddToInventory(col.gameObject);
+            col.gameObject.GetComponent<BushManager>().take_fruit();
+            Debug.Log("Bananadog");
+        }
+        else if (col.gameObject.tag == "Marshmelons" && Input.GetKeyDown(KeyCode.Space))
+        {
+            inv.AddToInventory(col.gameObject);
+            col.gameObject.GetComponent<BushManager>().take_fruit();
+            Debug.Log("Marshmelons");
         }
         else if (col.gameObject.tag == "Goal" && Input.GetKeyDown(KeyCode.Space))
         {
+            
             Debug.Log("Items dropped off");
             col.gameObject.GetComponent<GoalManager>().congrats();
-            points.point1Up();
+            pointTracker.addItems(inv);
         }
     }
 }

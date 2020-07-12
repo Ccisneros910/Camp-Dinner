@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        if (Input.GetKeyDown(KeyCode.Q)) { }
+        if (Input.GetKeyDown(KeyCode.Q)) { makeNoise(); }
     }
 
     void FixedUpdate()
