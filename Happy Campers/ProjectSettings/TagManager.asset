@@ -7,7 +7,7 @@ TagManager:
   - Bush
   - Enemies
   - Boundary
-  - Pile
+  - Goal
   layers:
   - Default
   - TransparentFX
