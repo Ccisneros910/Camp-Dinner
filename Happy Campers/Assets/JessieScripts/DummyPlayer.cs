@@ -22,14 +22,17 @@ public class DummyPlayer : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            UseItem();
-        }else if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.M))
         {
             DropItem();
         }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+        }
     }
+
+
 
     public void DropItem()
     {
