@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/C-Scenes/Main Level.unity
+- path: Assets/JessieScenes/JMain.unity
   isLoaded: 1
   isActive: 1

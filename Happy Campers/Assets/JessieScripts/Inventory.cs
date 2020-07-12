@@ -46,7 +46,11 @@ public class Inventory : MonoBehaviour
             return;
         }
         collectibles.Add(collectible);
-        changeIndex(0);
+        if(changeIndex != null)
+        {
+            changeIndex(0);
+        }
+        
     }
 
     public GameObject GetItem()
@@ -61,6 +65,16 @@ public class Inventory : MonoBehaviour
         return collectibles[index];
     }
 
+    public string GetItemName(int index)
+    {
+        return collectibles[index].GetComponent<UsableItem>().GetName();
+    }
+
+    public List<GameObject> GetListOfItems()
+    {
+        return collectibles;
+    }
+
     public int GetLength()
     {
         return collectibles.Count;
@@ -73,14 +87,35 @@ public class Inventory : MonoBehaviour
 
     public void DropItem()
     {
-        
-        collectibles[currentIndex].GetComponent<IDroppable>()?.Drop();
-        collectibles.RemoveAt(currentIndex);
-        changeIndex(0);
+        if(currentIndex < 0 || currentIndex > GetLength() -1 )
+        {
+            print("Inventory empty. Nothing to drop");
+            return;
+        }
+        DropItem(currentIndex);
     }
 
-    public void ClearItem(string name)
+    public void DropItem(int index)
     {
+        collectibles[index].GetComponent<IDroppable>()?.Drop();
+        collectibles.RemoveAt(index);
 
+        if(changeIndex != null)
+        {
+            changeIndex(0);
+        }
+        
     }
+
+    public void ClearItems()
+    {
+        collectibles.Clear();
+
+        if(changeIndex != null)
+        {
+            changeIndex(0);
+        }
+        
+    }
+
 }

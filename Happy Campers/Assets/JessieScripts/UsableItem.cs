@@ -26,4 +26,9 @@ public class UsableItem : MonoBehaviour, ICollectible, IUsable, IDroppable
     {
         //print("Omg homegurl dropped: " + name);
     }
+
+    public string GetName()
+    {
+        return name;
+    }
 }
