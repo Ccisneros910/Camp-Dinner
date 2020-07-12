@@ -1555,6 +1555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a49f838ab713674dbcc324a22c9da65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  points: {fileID: 1969415434}
+  inv: {fileID: 1988808308}
 --- !u!1 &580484465
 GameObject:
   m_ObjectHideFlags: 0
@@ -30717,6 +30719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27555bcbb8028ab458ddcd769c245994, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  game: {fileID: 575301725}
 --- !u!114 &1988808308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30726,9 +30729,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1988808301}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16d77766448075343b903235da007c3d, type: 3}
+  m_Script: {fileID: 11500000, guid: e1a12c07822b90b4abb6e7c1802b8d57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collectibles:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentIndex: 0
+  maxsize: 3
 --- !u!1 &2006973891
 GameObject:
   m_ObjectHideFlags: 0

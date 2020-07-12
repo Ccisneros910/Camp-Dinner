@@ -5,7 +5,7 @@ using UnityEngine;
 public class BushManager : MonoBehaviour
 {
     //Berry sprites
-    public GameObject[] berries;
+    public GameObject[] fruit;
     private bool fruitReady;
     private float timer;
 
@@ -15,10 +15,10 @@ public class BushManager : MonoBehaviour
         timer = 5f;
     }
 
-    public void take_berries()
+    public void take_fruit()
     {
         fruitReady = false;
-        foreach(GameObject x in berries)
+        foreach(GameObject x in fruit)
         {
             x.GetComponent<Transform>().localScale = new Vector3(0f, 0f, 0f);
         }
