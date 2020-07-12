@@ -107,6 +107,11 @@ public class Inventory : MonoBehaviour
         
     }
 
+    public void scoreItems()
+    {
+
+    }
+
     public void ClearItems()
     {
         collectibles.Clear();

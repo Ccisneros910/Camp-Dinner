@@ -23,4 +23,6 @@ public class BushManager : MonoBehaviour
             x.GetComponent<Transform>().localScale = new Vector3(0f, 0f, 0f);
         }
     }
+    
+    public bool check_if_ready() { return fruitReady; }
 }
