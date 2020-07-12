@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b42ae42838544e48beb27e8b87587d5, type: 3}
   m_Name: DummyB
   m_EditorClassIdentifier: 
-  Choice1: {fileID: 11400000, guid: 618d7c8f22fc4fc4f8ae28eec2e2240c, type: 2}
+  Choice1: {fileID: 0}
   Choice2: {fileID: 0}
-  dialogueText: And we're gay campers
+  dialogueText: "Balthazar: Yeah, I\u2019ll take a look around the camping grounds."

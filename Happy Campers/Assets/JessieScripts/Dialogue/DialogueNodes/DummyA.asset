@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Choice1: {fileID: 11400000, guid: 33017c51ee252e247ae15a003769d7af, type: 2}
   Choice2: {fileID: 0}
-  dialogueText: Hey so this is a gaym
+  dialogueText: "Flynn: Okay, okay, we can salvage this. I still have my cooking pot,
+    and I\u2019ve been around this campsite enough to know there\u2019s some great
+    ingredients lying around. Bal, can you bring me the ingredients at the top of
+    your screen before sundown?"

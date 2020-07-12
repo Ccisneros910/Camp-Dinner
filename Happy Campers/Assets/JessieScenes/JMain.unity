@@ -784,8 +784,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -187, y: 144}
-  m_SizeDelta: {x: -457.09998, y: 65.100006}
+  m_AnchoredPosition: {x: 2.7999878, y: 117.7}
+  m_SizeDelta: {x: -77.4, y: 117.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &936169584
 MonoBehaviour:
@@ -806,19 +806,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_Font: {fileID: 12800000, guid: 4ece3d99670c8cc4397aef4467b97173, type: 3}
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: dfadfdfasdfasdfsdfasdfdfdf
+    m_LineSpacing: 2
+  m_Text: 
 --- !u!222 &936169585
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1050,8 +1050,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 422, y: 23}
-  m_SizeDelta: {x: -841.01, y: 16.61}
+  m_AnchoredPosition: {x: 398.5, y: 23}
+  m_SizeDelta: {x: -794, y: 16.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1136293297
 MonoBehaviour:
@@ -1072,8 +1072,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 4ece3d99670c8cc4397aef4467b97173, type: 3}
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -1259,7 +1259,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1827,6 +1827,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: RequestUIHandler
       objectReference: {fileID: 0}
+    - target: {fileID: 1654042674099268725, guid: b4a6dd8c4cfee0f45ab739676965eb8b,
+        type: 3}
+      propertyPath: UIIcons.Array.data[0]
+      value: 
+      objectReference: {fileID: 2049297383}
+    - target: {fileID: 1654042674099268725, guid: b4a6dd8c4cfee0f45ab739676965eb8b,
+        type: 3}
+      propertyPath: UIIcons.Array.data[1]
+      value: 
+      objectReference: {fileID: 1634877654}
+    - target: {fileID: 1654042674099268725, guid: b4a6dd8c4cfee0f45ab739676965eb8b,
+        type: 3}
+      propertyPath: UIIcons.Array.data[2]
+      value: 
+      objectReference: {fileID: 1595428187}
     - target: {fileID: 1654042674099268724, guid: b4a6dd8c4cfee0f45ab739676965eb8b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1882,21 +1897,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1654042674099268725, guid: b4a6dd8c4cfee0f45ab739676965eb8b,
-        type: 3}
-      propertyPath: UIIcons.Array.data[0]
-      value: 
-      objectReference: {fileID: 2049297383}
-    - target: {fileID: 1654042674099268725, guid: b4a6dd8c4cfee0f45ab739676965eb8b,
-        type: 3}
-      propertyPath: UIIcons.Array.data[1]
-      value: 
-      objectReference: {fileID: 1634877654}
-    - target: {fileID: 1654042674099268725, guid: b4a6dd8c4cfee0f45ab739676965eb8b,
-        type: 3}
-      propertyPath: UIIcons.Array.data[2]
-      value: 
-      objectReference: {fileID: 1595428187}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4a6dd8c4cfee0f45ab739676965eb8b, type: 3}
 --- !u!1001 &6579903098174840793
